@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="goalstyles.css"/>
+  <title>Goals Form</title>
+</head>
+<body>
+  <div class="container">
+    
+    <form>
+      <h1>New Goal</h1>
+      <div class="form-inner">
+      <article>
+        <label for="goalName">Goal name</label>
+        <input type="text" name="goalName" id="goalName" required />
+      </article>
+      <article>
+        <label for="description">description</label>
+        <input type="text" name="description" id="description" required />
+      </article>
+    </div>
+
+      <div class="form-inner">
+
+        <article>
+          <label for="goalTotal">Goal Total</label>
+          <input type="text" name="goalTotal" id="goalTotal" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$1,000,000.00" required />
+        </article>
+
+        <article>
+          <label for="dob">Date of completion</label>
+          <input type="date" name="dob" id="dob" required />
+        </article>
+      </div>
+     
+        <button class="btn" type="submit">Set Goal</button>
+    </form>
+  </div>
+</body>
+</html>

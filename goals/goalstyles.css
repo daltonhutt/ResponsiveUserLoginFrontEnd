@@ -16,7 +16,7 @@ img {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: #3f3d56;
+  color: dimgray;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,23 +24,25 @@ body {
 }
 
 .container {
-  background-color: #f1f1f1;
+  background-color: lightgray;
   padding: 1.25rem;
   margin: 1.25rem;
   width: 90%;
   max-width: 700px;
-  border-radius: 1rem;
+  border-radius: .7rem;
   box-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,0.2);
 }
 
 .container form .form-inner {
   display: flex;
   flex-direction: column;
-  margin-top: 1.25rem;
+  margin-top: .70rem;
+  border-radius: .70rem;
 }
 
 .container form .form-inner article {
-  margin-top: 1.25rem;
+  margin-top: .70rem;
+  border-radius: .7rem;
 }
 
 .container form label {
@@ -50,13 +52,15 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-bottom: 0.2rem;
+  color: gray;
+  border-radius: .7rem;
 }
 
 .container form input {
   border-width: 2px;
   border-style: solid;
-  border-color: #3f3d56a9;
-  border-radius: 0.6rem;
+  border-color: white;
+  border-radius: 0.7rem;
   outline: none;
   padding: 0.625rem 1.25rem;
   width: 100%;
@@ -70,10 +74,10 @@ body {
   color: #fff;
   padding: 0.625rem 3rem;
   font-size: 1rem;
-  background-color: #3f3d56;
+  background-color: blue;
   border: none;
   outline: none;
-  border-radius: 0.625rem;
+  border-radius: 0.7rem;
   margin-top: 1.25rem;
   transition: opacity 0.2s ease-in-out;
 }
@@ -83,41 +87,7 @@ body {
   opacity: 0.75;
 
 }
-.checkboxes {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  margin: 1rem 0rem 0.5rem 0rem;
-}
 
-.checkbox {
-  display: none;
-}
-
-.label {
-  position: relative;
-  background-color: #fff;
-  border-radius: 50px;
-  margin: 0 1.25rem 0 0;
-  width: 50px;
-  height: 26px;
-  cursor: pointer;
-}
-
-.ball {
-  background-color: #3f3d56;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  border-radius: 50%;
-  width: 22px;
-  height: 22px;
-  transition: transform 0.15s linear;
-}
-
-.checkbox:checked + .label .ball {
-  transform: translateX(24px);
-}
 
 @media (min-width: 700px) {
   .container {

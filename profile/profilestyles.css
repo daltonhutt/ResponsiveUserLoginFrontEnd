@@ -89,6 +89,41 @@ body {
   opacity: 0.75;
 
 }
+.checkboxes {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 1rem 0rem 0.5rem 0rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  position: relative;
+  background-color: #fff;
+  border-radius: 50px;
+  margin: 0 1.25rem 0 0;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.ball {
+  background-color: blue;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: .2rem;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.15s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
 
 @media (min-width: 700px) {
   .container {
